@@ -1,9 +1,12 @@
 package ua.opnu;
 
-public class GameShape {
+public abstract class GameShape {
+
+    // Ім'я фігури (для виводу)
+    public abstract String getName();
 
     @Override
     public String toString() {
-        return "Game shape";
+        return getName();
     }
 }
