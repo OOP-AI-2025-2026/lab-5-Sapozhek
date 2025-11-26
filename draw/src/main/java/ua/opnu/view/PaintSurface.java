@@ -18,6 +18,12 @@ import java.util.List;
  */
 public class PaintSurface extends JComponent {
 
+    public void clearShapes() {
+        shapes.clear();
+        repaint();
+    }
+
+
     // Список фігур, які намальовані на поверхні
     private final List<DrawShape> shapes = new ArrayList<>();
 
